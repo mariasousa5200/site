@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'arthur';
+            src: url('fonts/NerkoOne-Regular.ttf') format('truetype');
+            }
+        * { margin: 0; padding: 0; scroll-behavior: smooth;}
+        .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .junin {
+            font-family: "bruno";
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header {
+            background-color: #296BC2; 
+            height: 207px; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 { color:white; font-size: 55px; }
+        nav { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc; 
+            height: 51px;
+        }
+        h1 {
+            font-family: arthur;
+        }
+        ul li { 
+            display: inline;
+            margin: 0 37px;
+        }
+        a {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            font-size: 22px;
+            color: #296BC2;
+            transition: 1s;
+        }
+        #conteudo {
+            display: flex;
+            flex-direction: row;
+            padding: 40px
+        }
+        main { 
+            width: 60%;
+        }
+        main h4 {
+            font-size: 24px;
+            margin-left: 16px;
+        }
+        aside {
+            width: 20%;
+            margin-left: 48px;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+        }
+        section h3 {
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        section img {
+           width: 100%; 
+        }
+        section span {
+            margin: 15px 0 10px 0;
+            font-weight: bold;
+        }
+        aside section img {
+            width: 100%;
+        }
+        aside h4 {
+            margin-left: 16px;
+        }
+        footer{
+            background-color: #D9D9D9;
+            height: 268px;
+        }
+        #topo {
+            width: 75px;
+            height: 75px;
+            background-color: #3250E5;
+            position: fixed;
+            right: 22px;
+            bottom: 20px;
+            border-radius: 50%;
+            color: #fff;
+        }
+    </style>
+</head>
+<!-- Conteúdo comentado -->
+<body>
+    <header id="header">
+        <h1>Desenvolvimento Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Inscrições</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <div id="conteudo">
+    <main>
+        <h4>Desenvolvimento Web</h4>
+        <section>
+            <h3>Crie aplicações web com PHP e MySQL</h3>
+            <img src="images/curso01.png" alt="Curso PHP e MySQL">
+            <span>Sobre o Curso</span>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, ducimus labore quod vero rem nobis exercitationem deserunt culpa fuga consequatur amet dicta neque quisquam cupiditate mollitia. Est laborum corrupti aliquid.
+            </p>
+        </section>
+
+        <section>
+            <h3>Construindo seu primerio app com react native</h3>
+            <img src="images/curso02.jpeg" alt="Curso PHP e MySQL">
+            <span>Sobre o Curso</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus incidunt eius nisi voluptatibus, unde enim magnam quaerat sunt odio! Commodi inventore asperiores iusto possimus illum corporis ipsam, tempore voluptate.x</p>
+        </section>
+        
+    </main>
+    <aside>
+        <h4>Posts em destaques</h4>
+        <section>
+            <img style="width: 100%;" src="images/curso01.png" alt="Curso PHP e MySQL">
+            <span>Sobre o Curso</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus incidunt eius nisi voluptatibus, unde enim magnam quaerat sunt odio! Commodi inventore asperiores iusto possimus illum corporis ipsam, tempore voluptate.x</p>
+            <span>Leia mais</span>
+        </section>
+        <h4>Últimas Notícias</h4>
+        <section>
+            <h3>Alunos da EPGAL são destaques na OBI</h3>
+            <img style="width: 100%;" src="images/alunos.jpeg" alt="Alunos EEEP">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus incidunt eius nisi voluptatibus, unde enim magnam quaerat sunt odio! Commodi inventore asperiores iusto possimus illum corporis ipsam, tempore voluptate.x</p>
+            <span>Leia mais</span>
+        </section>
+    </aside>
+    </div>
+    <footer>
+        <div></div>
+        <div>2024 - Site desenvolvido por <a href="#">Manoel Carvalho</a></div>
+    </footer>
+    <div id="topo">
+        <a href="#header">Voltar ao topo</a>
+    </div>
+</body>
+</html>
